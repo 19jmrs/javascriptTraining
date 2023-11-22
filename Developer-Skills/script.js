@@ -3,7 +3,7 @@
 // Problem
 /* Given an array of temperatures of one day, calculate the temperature amplitude.
 Keep in mind that sometimes it might be a sensor error */
-
+/*
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5]
 
 const maxTemp = function (arr) {
@@ -53,4 +53,22 @@ const measureKelvin = function () {
     return kelvin
 }
 //console.table usefull to see objects
-console.log(measureKelvin())
+console.log(measureKelvin()) */
+
+/* Given an array of forecasted maximum temperatures, the thermometer displays a string
+with the temperatures.
+
+Example: [17, 21, 23] will print "... 17C in 1 day, 21C in 2 days, 23C in 3 days"
+
+Create a function 'printForecast' which takes in a array 'arr' and logs a string the the above to the console
+*/
+
+const example = [17, 21, 23]
+
+const printForecast = function (arr) {
+    for (let index = 0; index < arr.length; index++) {
+        console.log(`...${arr[index]}C in ${index + 1} days...`)
+    }
+}
+
+printForecast(example)
