@@ -41,3 +41,16 @@ const amplitudeFinal = maxTemp(temperaturesFinal) - minTemp(temperaturesFinal)
 console.log(`Max Temperature: ${maxTemp(temperaturesFinal)}`)
 console.log(`Min Temperature: ${minTemp(temperaturesFinal)}`)
 console.log(`Amplitude: ${amplitudeFinal}`)
+
+//bug fixing and ways to debug
+const measureKelvin = function () {
+    const measurement = {
+        type: "temp",
+        unit: "celsius",
+        value: Number(prompt('Degrees celsius: '))
+    }
+    const kelvin = measurement.value + 273
+    return kelvin
+}
+//console.table usefull to see objects
+console.log(measureKelvin())
